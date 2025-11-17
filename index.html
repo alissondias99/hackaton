@@ -20,7 +20,7 @@
             </div>
             <div class="topbar-right">
                 <div class="topbar-right">
-                    
+
                     <div class="topbar-settings">
                         <i class="fa-solid fa-gear"></i>
 
@@ -44,7 +44,6 @@
                     </div>
                 </div>
 
-
                 <div class="topbar-avatar">
                     <img src="imgs/foto_perfil.jpg" alt="Avatar do usuário" />
                 </div>
@@ -59,7 +58,8 @@
                 </div>
 
                 <div class="sidebar-courses">
-                    <div class="course-card active">
+                    <!-- Cada card agora tem o arquivo da matéria em data-file -->
+                    <div class="course-card active" data-file="engenharia.html">
                         <div class="course-icon">
                             <img src="imgs/eng_soft.jpeg" alt="Ícone Engenharia de software" />
                         </div>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
 
-                    <div class="course-card">
+                    <div class="course-card" data-file="sistemas.html">
                         <div class="course-icon">
                             <img src="imgs/si.jpeg" alt="Ícone Fundamentos de SI" />
                         </div>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
 
-                    <div class="course-card">
+                    <div class="course-card" data-file="teoria.html">
                         <div class="course-icon">
                             <img src="imgs/teoria.jpeg" alt="Ícone Teoria da computação" />
                         </div>
@@ -89,7 +89,7 @@
                         </div>
                     </div>
 
-                    <div class="course-card">
+                    <div class="course-card" data-file="arquiterura.html">
                         <div class="course-icon">
                             <img src="imgs/arc_org.jpeg" alt="Ícone Organização e arquitetura" />
                         </div>
@@ -107,55 +107,21 @@
             <main class="main">
                 <!-- MENU INTERNO -->
                 <nav class="subnav">
-                    <div class="subnav-item active">Aula</div>
-                    <div class="active">Chat</div>
+                    <div class="subnav-item">Aula</div>
+                    <div class="subnav-item active">Chat</div>
                     <div class="subnav-item">Materiais</div>
                     <div class="subnav-item">Aulas Gravadas</div>
                     <div class="subnav-item">Quiz</div>
                 </nav>
 
-                <!-- ÁREA DO CHAT -->
-                <section class="chat-area">
-                    <div class="chat-bg">
-                        <img src="" alt="Marca d'água" />
-                    </div>
+                <!-- ÁREA DE CONTEÚDO PRINCIPAL (se quiser, pode preencher com algo fixo) -->
+                <section class="main-content">
+                    <!-- Coloque aqui qualquer conteúdo principal fixo da página -->
+                </section>
 
-                    <div class="chat-messages">
-                        <div class="message">
-                            <div class="message-avatar">
-                                <img src="imgs/foto_professor.jpg" alt="Professor" />
-                            </div>
-                            <div class="message-bubble">
-                                Todos conseguem me escutar bem?
-                            </div>
-                        </div>
-
-                        <div class="message">
-                            <div class="message-avatar">
-                                <img src="imgs/foto_aluna.jpg" alt="Aluno" />
-                            </div>
-                            <div class="message-bubble me">
-                                Sim, professora!
-                            </div>
-                        </div>
-
-                        <div class="message">
-                            <div class="message-avatar">
-                                <img src="" alt="Aluno" />
-                            </div>
-                            <div class="message-bubble me">
-                                Tudo certo aqui também.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- INPUT DO CHAT -->
-                    <div class="chat-input-wrapper">
-                        <div class="chat-input-inner">
-                            <input type="text" class="chat-input" placeholder="Digite sua mensagem..." />
-                            <button class="chat-input-btn btn btn-primary">Enviar</button>
-                        </div>
-                    </div>
+                <!-- CONTEÚDO DA MATÉRIA CARREGADO DINAMICAMENTE -->
+                <section id="course-content">
+                    <!-- O conteúdo de engenharia.html, sistemas.html, etc. será inserido aqui -->
                 </section>
             </main>
         </div>
